@@ -1,0 +1,51 @@
+
+/*  DIVISOES  */
+    #root {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas: "box-cad main-list";
+    }
+
+    .cad-box {
+        grid-area: box-cad;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    @media (max-width: 1024px) {
+        #root {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "box-cad"
+                                 "main-list";
+        }
+        .main-list {
+            margin: 50px 0 !important;
+            display: flex;
+            justify-content: center;
+        }
+        .cad-box {
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .main-list {
+        grid-area: main-list;
+        margin-bottom: 50px;
+    }
+    
+    @media (max-width: 1172px) and (min-width: 1025px) {
+        .card {
+            width: 100% !important;
+        }
+    }
+
+    @media (max-width: 758px) {
+        .card {
+            width: 100% !important;
+        }
+    }

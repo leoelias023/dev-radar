@@ -1,0 +1,49 @@
+/* CSS FOR DEVFORM  */
+.box {
+    width: 90%;
+    background-color: #fff;
+    padding: 10px;
+    padding-bottom: 30px;
+    animation: surgir 1s;
+}
+
+@keyframes surgir{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+.box h2 {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 20px 0;
+}
+.box form {
+    display: flex;
+    flex-direction: column;
+}
+.main-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 260px;
+    justify-content: center;
+    align-items: center;
+}
+.main-form input{
+    width: 90%;
+    margin-bottom: 15px;
+}
+.end-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+.end-form input{
+    width: 80%;
+}
+.erros {
+    color: red;
+    margin-bottom: 10px;
+}
